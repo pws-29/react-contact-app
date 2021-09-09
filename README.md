@@ -1,1 +1,4 @@
-minuto 30.13
+minuto 36.02
+
+localstorage 
+uuidv4
