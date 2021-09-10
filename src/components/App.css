@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+/* HEADER */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-header {
+  background-color: #2c2d3a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-header h2 {
+  color: #fff;
+  padding: 18px 48px;
+}
+/* HEADER */
+
+/* Add contact element */
+.add-contact-container {
+  width: 50%;
+  margin: 16px;
+  padding: 0px 48px;
+  display: inline-block;
+  border-right: 1px solid #A6A9B7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-contact-title {
+  padding-bottom: 32px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+
+.contact-form-label {
+  display: inline-block;
+  font-size: 25px;
+  width: 100%;
+  margin: 12px 0px;
+  color: #A6A9B7;
+}
+
+.contact-form-input {
+  display: block;
+
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  width: 100%;
+
+  height: calc(1.5rem + .75rem + 2px);
+
+  font-size: 1rem;
+  color: #A6A9B7;
+  font-weight: 400;
+
+  padding: .375rem .75rem;
+}
+
+.contact-form-input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.contact-form-input::placeholder {
+  color: #ced4da;
+}
+
+.contact-form-button {
+  margin-top: 14px;
+  padding: .5rem 1.2rem;
+  font-size: 1.25rem;
+  background-color: #2c2d3a;
   color: white;
+  
+  border: none;
+  border-radius: .3rem;
+
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.item, .teste {
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -41,30 +41,32 @@ function AddContact(props) {
   }
 
   return (
-    <div className="ui main">
-      <h2>Add Contact</h2>
-      <form className="ui form" onSubmit={add}>
+    <div className="add-contact-container"> {/* ui main */}
+      <h2 className="add-contact-title">Add Contact</h2>
+      <form className="contact-form" onSubmit={add}> {/* ui main */}
         <div className="field">
-          <label>Name</label>
+          <label className="contact-form-label">Name</label>
           <input
             type="text"
             name="name"
             placeholder="Name"
             value={state.name}
             onChange={e => dispatch({ type: 'name', name: e.target.value })}
+            className="contact-form-input"
           />
         </div>
         <div className="field">
-          <label>E-mail</label>
+          <label className="contact-form-label">E-mail</label>
           <input
             type="text"
             name="email"
             placeholder="E-mail"
             value={state.email}
             onChange={e => dispatch({ type: 'email', email: e.target.value })}
+            className="contact-form-input"
           />
         </div>
-        <button className="ui button blue">Add</button>
+        <button className="contact-form-button">Add</button>
       </form>
     </div>
   )
