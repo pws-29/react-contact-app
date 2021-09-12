@@ -7,7 +7,7 @@ function ContactList({ contacts, getContactId }) {
   }
 
   return (
-    <div className="teste">
+    <div className="contact-list">
       {contacts.map(contact => {
         return <ContactCard contact={contact} clickHandler={deleteContacthandler} key={contact.id} />
       })}

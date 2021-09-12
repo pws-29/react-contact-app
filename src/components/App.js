@@ -36,7 +36,7 @@ function App() {
   }, [contacts])
 
   return (
-    <div className="ui container">
+    <div className="app-container">
       <Header />
       <AddContact addContactHandler={addContactHandler} />
       <ContactList contacts={contacts} getContactId={removeContactHandler} />
